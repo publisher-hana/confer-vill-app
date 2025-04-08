@@ -41,7 +41,7 @@ const BrandZone = () => {
               <PrdBox img="/confer-vill-app/images/brand_ex05.jpg" cate="호흡기" prdTitle="듀어클리어" subTitle="고지혈증치료제" desc="하루 2회 사용으로 중등도 이상 COPD 환자의 24시간 호흡곤란 증상을 개선" />
             </div>
             <div className='btn-wrap btm'>
-              <button className='btn-base line btn-more'>더보기</button>
+              <button className='btn-base btn-more'>더보기</button>
             </div>
           </div>
         </Layout>
