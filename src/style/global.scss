@@ -64,21 +64,21 @@ em.point{color: var(--primary-color);}
 .btn-base{
   min-width: var(--w,160px);
   height: var(--h,48px);
-  background-color: var(--btn-bg-color,var(--primary-color));
+  background-color: var(--btn-bg-color,var(--skyblue-color));
   color: var(--f-color,#fff);
   font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
+  &.gray{
+    --btn-bg-color: #d9dee3;
+    color: #000;
+  }
   &.line{
     --btn-bg-color:#fff;
-    --f-color:var(--primary-color);
-    border:1px solid var(--btn-bd-color,var(--primary-color));
-    &.skyblue{
-      --f-color: var(--skyblue-color);
-      --btn-bd-color: var(--skyblue-color);
-    }
+    --f-color:var(--skyblue-color);
+    border:1px solid var(--btn-bd-color,var(--skyblue-color));
     &.gray{
       --f-color:#555;
       --btn-bd-color: var(--bd-color);
@@ -132,9 +132,9 @@ em.point{color: var(--primary-color);}
 /*from*/
 input{
   &[type="text"],&[type="email"]{
-    min-width: var(--inpt-w,240px);
+    min-width: var(--inpt-w,100%);
     height: 34px;
-    padding: 0 10px;
+    padding: 0 var(--pd-row,10px);
     border: 1px solid var(--bd-color);
     box-sizing: border-box;
   }
@@ -143,6 +143,7 @@ input{
   }
 }
 textarea{
+  padding: 10px var(--pd-row,10px);
   border: 1px solid var(--bd-color);
 }
 .form-btn{

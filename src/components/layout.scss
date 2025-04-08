@@ -164,3 +164,128 @@ footer{
     border-bottom: none;
   }
 }
+
+.list-box{
+  .box{
+    border-bottom: 1px solid var(--bd-color);
+    a{
+      position: relative;
+      padding: 2rem 1rem;
+      display: block;
+      strong{
+        font-size: 1.8rem;
+        color: #202020;
+      }
+      .tail{
+        font-size: 1.4rem;
+        color: var(--text-gray);
+      }
+      .label{
+        position: absolute;
+        top:50%;
+        right: 0;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        height: 26px;
+        line-height: 26px;
+        padding: 0 .6rem;
+        &.wait{
+         border: 1px solid #13c877; 
+         color: #13c877;
+        }
+      }
+    }
+  }
+}
+.btn-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.btm{
+    margin:2rem 0;
+  }
+  &.right{
+    justify-content: flex-end;
+  }
+  button, a{
+    --w:100px;
+    --h:36px;
+    font-size: 1.4rem;
+    &.btn-more{
+    }
+    &+button,&+a{
+      margin-left: 10px;
+    }
+  }
+}
+
+.board-cont{
+  .board-header{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--bd-color);
+    font-size: 1.3rem;
+    .title{
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .file-down{
+      display: block;
+      padding-top: 1rem;
+      color: var(--text-gray);
+    }
+  }
+  .board-cont{
+    padding: 3rem 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--bd-color);
+    .label-reply{
+      display: block;
+      width: 60px;
+      height:30px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      text-align: center;
+      background-color: #5f5f5f;
+      color: #fff;
+    }
+  }
+}
+.ico-file{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url('/confer-vill-app/images/ico_comm.png') no-repeat;
+  background-position: -66px -55px;
+  background-size: 160px;
+}
+
+.forms{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.fixed-btn-wrap{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+}
+.fixed-btn-wrap{
+  button{
+    width: 50%;
+    height: 100%;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--skyblue-color);
+    box-sizing: border-box;
+    &.cancel{
+      background-color: #d9dee3;
+      color: #000;
+    }
+  }
+}

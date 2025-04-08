@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import '../layout.scss'
 import SideBar from './SideBar'
 
-const Header = () => {
+const Header = ({type}) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation(); 
   const openSidebar = () => {
@@ -18,7 +18,7 @@ const Header = () => {
   }, [location]);
 
   return (
-    <header className='mb-header flex'>
+    <header className={`mb-header flex ${type === 'login' ? 'login-header' : ''}`}>
       <h1><Link to="/" className='logo'></Link></h1>
       <button className='all-menu' onClick={openSidebar}></button>
       <SideBar isOpen={isOpen} closeSidebar={closeSidebar} />

@@ -77,87 +77,28 @@
   }
 }
 
-.list-box{
-  .box{
-    border-bottom: 1px solid var(--bd-color);
-    a{
-      padding-bottom: 2rem;
-      display: block;
+.inquiry-cont{
+  .list-box{
+    .box{
+      &:first-of-type{
+        border-top: 1px solid var(--bd-color);
+      }
       strong{
-        display: block;
-        font-size: 2rem;
-        color: #202020;
-      }
-      .tail{
-        font-size: 1.4rem;
-        color: var(--text-gray);
+        width: 80%;
       }
     }
   }
-}
-.btn-wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &.btm{
-    margin:2rem 0;
-  }
-  &.right{
-    justify-content: flex-end;
-  }
-  button{
-    --w:100px;
-    --h:36px;
-    font-size: 1.4rem;
-  }
-}
-
-.board-cont{
-  .board-header{
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--bd-color);
-    font-size: 1.3rem;
-    .title{
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
+  .forms{
+    input[type="text"]{
+      --pd-row:12px;
     }
-    .file-down{
-      display: block;
-      padding-top: 1rem;
-      color: var(--text-gray);
+    textarea{
+      height: 290px;
     }
   }
-  .board-cont{
-    padding: 3rem 0;
-    font-size: 1.4rem;
-    border-bottom: 1px solid var(--bd-color);
-  }
-}
-.ico-file{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  background: url('/confer-vill-app/images/ico_comm.png') no-repeat;
-  background-position: -66px -55px;
-  background-size: 160px;
 }
 
 .brand-zone{
-  .category-tabs{
-    button{
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: var(--text-gray);
-      &+button{
-        margin-left: 1rem;
-      }
-      &.on{
-        color: #000;
-        border-bottom: 2px solid #000;
-      }
-    }
-  }  
   .cont-top{
     margin:2rem 0;
     font-size: 1.3rem; 
@@ -289,3 +230,18 @@
     }
   }
 }
+.category-tabs{
+  margin-bottom:2rem;
+  button{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    &+button{
+      margin-left: 1rem;
+    }
+    &.on{
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
+  }
+}  
